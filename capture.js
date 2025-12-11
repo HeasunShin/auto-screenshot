@@ -23,7 +23,10 @@ const fs = require("fs");
 const path = require("path");
 
 async function run() {
-  const browser = await puppeteer.launch();
+  //   const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
   const page = await browser.newPage();
 
   // 캡처할 URL
