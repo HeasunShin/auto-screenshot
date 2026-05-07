@@ -36,7 +36,7 @@ async function run() {
   await page.setViewport({ width: 900, height: 630 });
 
   // 캡처할 사이트 URL
-  await page.goto("https://heasunshin.github.io/gsap_ddeok/", {
+  await page.goto("https://project1-react-app.vercel.app", {
     waitUntil: "networkidle2",
   });
 

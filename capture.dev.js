@@ -46,7 +46,7 @@ function run() {
 
         case 8:
           _context.next = 10;
-          return regeneratorRuntime.awrap(page["goto"]("https://heasunshin.github.io/gsap_ddeok/", {
+          return regeneratorRuntime.awrap(page["goto"]("https://project1-react-app.vercel.app", {
             waitUntil: "networkidle2"
           }));
 
